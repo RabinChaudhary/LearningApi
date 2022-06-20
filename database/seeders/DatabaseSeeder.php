@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Petition;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -20,5 +21,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        Petition::factory(50)->create();
+        
     }
 }
